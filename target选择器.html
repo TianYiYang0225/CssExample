@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>结构性伪类选择器—target</title>
+
+<style type="text/css">
+#CColor:target p{
+  background: orange;
+  color: #fff;
+}
+.showTextBox{
+    display:none;
+}
+#SText:target {
+    color: black;
+    display:block;
+}
+</style>
+</head> 
+<body>
+    <h2><a href="#CColor">变色</a></h2>
+    <div class="CColorBox" id="CColor">
+        <p>我要变色了</p>
+    </div>
+    <h2><a href="#SText">显示</a></h2>
+    <div class="showTextBox" id="SText">
+        <p>文本显示啦</p>
+        </div>
+</body>
+</html>
