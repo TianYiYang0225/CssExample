@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图片位置设定</title>
+    <style type="text/css" >
+    .external{
+        height: 800px;
+        width:600px; 
+        padding: 50px;
+        border:20px dashed red;
+        background: url(http://img3.imgtn.bdimg.com/it/u=1566750187,3165349633&fm=214&gp=0.jpg) no-repeat;
+        background-origin: border-box;
+        background-clip: border-box;
+        position: relative;
+    }
+    .external span{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .inside{
+        height: 400px;
+        width: 400px;
+        border: 2px solid black;
+
+    }
+        
+
+    </style>
+</head>
+<body>
+    <div class="external"> <span>外部</span>
+            <div class="inside">正文</div>    
+    </div>
+</body>
+</html>

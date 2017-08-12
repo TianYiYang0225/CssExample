@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+    .example{
+        /* 第一种方式 */
+        /* width: 500px;
+        height: 300px;
+        border: 1px solid red;
+        background-image: url(http://img15.3lian.com/2015/a1/45/d/22.jpg),
+                      url(http://sc.jb51.net/uploads/allimg/150604/14-15060415130Cc.jpg),
+                      url(http://img2.imgtn.bdimg.com/it/u=3517454808,3338420185&fm=27&gp=0.jpg);
+        background-repeat: no-repeat,no-repeat,no-repeat;
+        background-position: left top,top, right top;
+        background-size: 100px,100px,110px; */
+        /* 第二种方式 */
+        width: 500px;
+        height: 300px;
+        border: 1px solid red;
+        background:
+        url(http://img15.3lian.com/2015/a1/45/d/22.jpg) no-repeat left top / 100px , 
+        url(http://sc.jb51.net/uploads/allimg/150604/14-15060415130Cc.jpg) no-repeat  top / 100px,
+        url(http://img2.imgtn.bdimg.com/it/u=3517454808,3338420185&fm=27&gp=0.jpg) no-repeat right top/110px;
+    }
+    </style>
+</head>
+<body>
+    <div class="example">
+    
+    </div>
+</body>
+</html>
